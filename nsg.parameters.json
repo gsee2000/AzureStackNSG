@@ -1,0 +1,36 @@
+{
+    "$schema": "https://schema.management.azure.com/schemas/2015-01-01/deploymentParameters.json#",
+    "contentVersion": "1.0.0.0",
+    "parameters": {
+        "osDiskVhdUri": {
+            "value": "https://nsgimage.blob.location.azure.company.com/nsgrun01/nsg-5.2.2.vhd"
+        },
+        "adminUsername": {
+            "value": "exampleusername"
+        },
+        "adminPassword": {
+            "value": 'examplepassword'
+        },
+        "imagePublisher": {
+            "value": "nsg"
+        },
+        "imageOffer": {
+            "value": "nsg01"
+        },
+        "imageSku": {
+            "value": "5.2.1"
+        },
+        "vmSize": {
+            "value": "Standard_A1"
+        },
+        "publicIPAllocationMethod": {
+            "value": "Dynamic"
+        },
+        "idleTimeoutInMinutes": {
+            "value": 4
+        },
+        "publicIpAddressVersion": {
+            "value": "IPv4"
+        }
+    }
+}
